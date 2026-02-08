@@ -1,0 +1,22 @@
+class Employe{
+    int data;
+    private String name;
+
+    void setValue(String name){
+        this.name=name;
+    }
+    String getValue(){
+        return name;
+    }
+   
+}
+public class Get{
+    public static void main(String args[]){
+        Employe e=new Employe();
+        e.data=34;
+        e.setValue("priya");
+    
+       System.out.println(e.data);
+       System.out.println(e.getValue());
+    }
+}
