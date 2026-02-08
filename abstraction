@@ -1,0 +1,27 @@
+abstract class Bank{
+    abstract void interest();
+}
+class Sbi extends Bank{
+    void interest(){
+        System.out.println("sbi interest is 6%");
+    }
+    void account(){
+        System.out.println("create account as possible");
+    }
+}
+class Hdfc extends Bank{
+    void interest(){
+        System.out.println("hdfc interest is 7%");
+    }
+}
+
+public class Abs{
+    public static void main(String args[]){
+        Bank b= new Hdfc();
+        b.interest();
+        b = new Sbi();
+        b.interest();
+        Sbi c= new Sbi();
+        c.account();
+    }
+}
