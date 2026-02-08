@@ -1,0 +1,53 @@
+// class Student{
+//     private int  marks;
+//     public void setmarks(int m){
+//         if(marks>0 || marks<=100){
+//         this.marks=m;
+//         }else{
+//             System.out.println("invalid marks");
+//         }
+//     }
+//     public int getmarks(){
+//         return marks;
+//     }
+// }
+// public class Marks{
+//     public static void main(String args[]){
+//         Student s=new Student();
+//         s.setmarks(0);
+//         System.out.println(s.getmarks());
+//     }
+// }
+class Employee{
+    private int amount;
+    private int id;
+    private String name;
+
+    void setamount(int a){
+        this.amount=a;
+    }
+    int getamount(){
+        return amount;
+    }
+    void sete(int id,String n){
+        this.id=id;
+        this.name=n;
+
+    }
+    int  getid(){
+        return id;
+    }
+    String getname(){
+        return name;
+    }
+}
+public class Marks{
+    public static void main(String args[]){
+        Employee e=new Employee();
+        e.setamount(5000);
+        e.sete(45,"priya");
+        System.out.println(e.getamount());
+        System.out.println(e.getid());
+        System.out.println(e.getname());
+    }
+}
