@@ -1,0 +1,22 @@
+
+interface Shape{
+    void area(int l,int b);
+    void perimeter(int l,int b);
+}
+class Rectangle implements Shape{
+  public void area(int l,int b){
+    
+        System.out.println("area is of rectanlge is:"+(l*b));
+    }
+    public void perimeter(int l,int b){
+        
+        System.out.println("perimeter of rectangle is:"+(2*(l+b)));
+    }
+}
+public class Area{
+    public static void main(String args[]){
+    Rectangle A=new Rectangle();
+    A.area(12,12);
+    A.perimeter(2,12);
+    }
+}
