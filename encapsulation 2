@@ -1,0 +1,22 @@
+class Student{
+    private int roll;
+    private String name;
+    public void setData(int r,String n){
+        roll=r;
+        name=n;
+    }
+    public void display(){
+        System.out.println("roll is:"+roll);
+        System.out.println("name is:"+name);
+    }
+}
+public class Encap{
+    public  static void main(String args[]){
+        Student s=new Student();
+        s.setData(1,"rahul");
+        s.display();
+        Student s2=new Student();
+        s2.setData(2,"priya");
+        s2.display();
+    }
+}
